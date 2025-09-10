@@ -1,0 +1,32 @@
+# EBR : KPI Analysis Deck (Streamlit)
+
+Generate 1–2 adaptive EBR slides with KPI cards, small charts, and embedded screenshots. Outputs a downloadable `.pptx` using your base template.
+
+## 🔧 Setup
+
+1) Clone or fork this repo.
+2) (Optional) Create and activate a virtual env.
+3) `pip install -r requirements.txt`
+4) `streamlit run app.py`
+
+## ☁️ Streamlit Cloud
+
+1) Push this repo to GitHub.
+2) On streamlit.io, create a new app -> select this repo -> main branch -> `app.py`.
+3) Deploy (no extra secrets required).
+4) Upload your base `.pptx` template in the sidebar when running.
+
+## 🧠 Usage
+
+- Upload CSV/XLSX/JSON to map a quick bar/line chart (select x/y columns).
+- Add KPI cards (headline, value, short note).
+- Upload screenshots; the app embeds them and can place them below cards.
+- Click **Generate PPTX** then **Download**.
+
+## 📝 Notes
+- Speaker notes are included by default (one bullet per card + chart note).
+- If you upload a PPTX template, the output will adopt your brand style.
+- No OCR by default; large screenshots can be embedded as-is. You can still crop offline and upload smaller images.
+
+## 🔌 Optional: OCR Add-on (advanced)
+If you need to parse text automatically from screenshots, add to `requirements.txt`:
